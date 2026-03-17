@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>@ViewData["Title"] - E-Shopper</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="~/css/price-range.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="~/images/ico/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="~/images/ico/apple-touch-icon-57-precomposed.png" />
+</head>
+<body>
+    <header id="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i> +84 123 456 789</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> linhkien@shop.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                            <a asp-controller="Home" asp-action="Index">
+                                <img src="~/images/home/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
+                                <li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
+                                <li><a href="#"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li><a href="#"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a asp-controller="Home" asp-action="Index" class="active">Trang chủ</a></li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="#">Danh mục</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="search_box pull-right">
+                            <input type="text" placeholder="Tìm kiếm" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="companyinfo">
+                            <h2><span>E</span>-Shop</h2>
+                            <p>Website bán linh kiện điện tử ASP.NET MVC</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="col-sm-3">
+                            <div class="video-gallery text-center">
+                                <a href="#">
+                                    <div class="iframe-img">
+                                        <img src="~/images/home/iframe1.png" alt="" />
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-play-circle-o"></i>
+                                    </div>
+                                </a>
+                                <p>Linh kiện mới</p>
+                                <h2>2025</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="video-gallery text-center">
+                                <a href="#">
+                                    <div class="iframe-img">
+                                        <img src="~/images/home/iframe2.png" alt="" />
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-play-circle-o"></i>
+                                    </div>
+                                </a>
+                                <p>Khuyến mãi</p>
+                                <h2>2025</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="video-gallery text-center">
+                                <a href="#">
+                                    <div class="iframe-img">
+                                        <img src="~/images/home/iframe3.png" alt="" />
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-play-circle-o"></i>
+                                    </div>
+                                </a>
+                                <p>Sản phẩm hot</p>
+                                <h2>2025</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="video-gallery text-center">
+                                <a href="#">
+                                    <div class="iframe-img">
+                                        <img src="~/images/home/iframe4.png" alt="" />
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-play-circle-o"></i>
+                                    </div>
+                                </a>
+                                <p>Ưu đãi</p>
+                                <h2>2025</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="address">
+                            <img src="~/images/home/map.png" alt="" />
+                            <p>TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Dịch vụ</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Hỗ trợ online</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#">Trạng thái đơn</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Sản phẩm</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Arduino</a></li>
+                                <li><a href="#">Cảm biến</a></li>
+                                <li><a href="#">Module</a></li>
+                                <li><a href="#">Nguồn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Chính sách</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Điều khoản</a></li>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Đổi trả</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Giới thiệu</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Thông tin shop</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Bản quyền</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="single-widget">
+                            <h2>Nhận tin mới</h2>
+                            <form action="#" class="searchform">
+                                <input type="text" placeholder="Nhập email" />
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fa fa-arrow-circle-o-right"></i>
+                                </button>
+                                <p>Nhận thông báo sản phẩm và ưu đãi mới nhất</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2025 E-Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.scrollUp.min.js"></script>
+    <script src="~/js/price-range.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/main.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

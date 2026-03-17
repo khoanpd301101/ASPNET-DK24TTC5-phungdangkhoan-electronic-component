@@ -1,0 +1,2 @@
+D:\FL\project_DK\electronic-component\electronic-component\wwwroot\css\site.css
+D:\FL\project_DK\electronic-component\electronic-component\wwwroot\js\site.js
