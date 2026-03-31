@@ -22,6 +22,32 @@ namespace electronic_component.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("electronic_component.Models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"), 1L, 1);
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("electronic_component.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -52,8 +78,7 @@ namespace electronic_component.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Address")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -167,6 +192,48 @@ namespace electronic_component.Migrations
                     b.ToTable("Products", (string)null);
                 });
 
+            modelBuilder.Entity("electronic_component.Models.Wishlist", b =>
+                {
+                    b.Property<int>("WishlistId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WishlistId"), 1L, 1);
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("WishlistId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Wishlists");
+                });
+
+            modelBuilder.Entity("electronic_component.Models.Cart", b =>
+                {
+                    b.HasOne("electronic_component.Models.Customer", "Customer")
+                        .WithMany("Carts")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("electronic_component.Models.Product", "Product")
+                        .WithMany("Carts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("electronic_component.Models.Order", b =>
                 {
                     b.HasOne("electronic_component.Models.Customer", "Customer")
@@ -208,6 +275,25 @@ namespace electronic_component.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("electronic_component.Models.Wishlist", b =>
+                {
+                    b.HasOne("electronic_component.Models.Customer", "Customer")
+                        .WithMany("Wishlists")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("electronic_component.Models.Product", "Product")
+                        .WithMany("Wishlists")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("electronic_component.Models.Category", b =>
                 {
                     b.Navigation("Products");
@@ -215,12 +301,23 @@ namespace electronic_component.Migrations
 
             modelBuilder.Entity("electronic_component.Models.Customer", b =>
                 {
+                    b.Navigation("Carts");
+
                     b.Navigation("Orders");
+
+                    b.Navigation("Wishlists");
                 });
 
             modelBuilder.Entity("electronic_component.Models.Order", b =>
                 {
                     b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("electronic_component.Models.Product", b =>
+                {
+                    b.Navigation("Carts");
+
+                    b.Navigation("Wishlists");
                 });
 #pragma warning restore 612, 618
         }

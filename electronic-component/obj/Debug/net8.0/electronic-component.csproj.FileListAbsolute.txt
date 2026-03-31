@@ -66,3 +66,4 @@ D:\FL\project_DK\electronic-component\electronic-component\obj\Debug\net8.0\refi
 D:\FL\project_DK\electronic-component\electronic-component\obj\Debug\net8.0\electronic-component.pdb
 D:\FL\project_DK\electronic-component\electronic-component\obj\Debug\net8.0\electronic-component.genruntimeconfig.cache
 D:\FL\project_DK\electronic-component\electronic-component\obj\Debug\net8.0\ref\electronic-component.dll
+D:\FL\project_DK\electronic-component\electronic-component\obj\Debug\net8.0\electronic-component.sourcelink.json

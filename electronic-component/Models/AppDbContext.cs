@@ -13,6 +13,8 @@ namespace electronic_component.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +25,8 @@ namespace electronic_component.Models
             modelBuilder.Entity<Customer>().ToTable("Customers");
             modelBuilder.Entity<Order>().ToTable("Orders");
             modelBuilder.Entity<OrderDetail>().ToTable("OrderDetails");
+            modelBuilder.Entity<Cart>().ToTable("Carts");
+            modelBuilder.Entity<Wishlist>().ToTable("Wishlists");
         }
     }
 }

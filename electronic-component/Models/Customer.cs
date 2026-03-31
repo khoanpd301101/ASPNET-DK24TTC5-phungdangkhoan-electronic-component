@@ -18,9 +18,10 @@ namespace electronic_component.Models
         [StringLength(20)]
         public string Phone { get; set; }
 
-        [StringLength(200)]
         public string? Address { get; set; }
 
         public virtual ICollection<Order>? Orders { get; set; }
+        public virtual ICollection<Cart>? Carts { get; set; }
+        public virtual ICollection<Wishlist>? Wishlists { get; set; }
     }
 }

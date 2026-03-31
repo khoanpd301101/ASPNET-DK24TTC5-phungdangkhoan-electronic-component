@@ -22,5 +22,8 @@ namespace electronic_component.Models
 
         public int CategoryId { get; set; }
         public virtual Category? Category { get; set; }
+
+        public virtual ICollection<Cart>? Carts { get; set; }
+        public virtual ICollection<Wishlist>? Wishlists { get; set; }
     }
 }
