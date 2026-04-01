@@ -1,0 +1,111 @@
+﻿@model electronic_component.Models.CheckoutViewModel
+@using electronic_component.Models
+
+@{
+    ViewData["Title"] = "Thanh toán";
+    var cartItems = ViewBag.CartItems as List<Cart>;
+    decimal total = ViewBag.Total != null ? (decimal)ViewBag.Total : 0;
+}
+
+<section style="margin-top: 30px; margin-bottom: 50px; background: #f8f9fb; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div style="background: #fff; border-radius: 16px; padding: 30px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                    <div style="margin-bottom: 25px;">
+                        <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #222;">
+                            Thông tin đặt hàng
+                        </h2>
+                        <p style="margin-top: 8px; color: #777;">
+                            Vui lòng nhập đầy đủ thông tin để hoàn tất đơn hàng
+                        </p>
+                    </div>
+
+                    <form asp-controller="Order" asp-action="Checkout" method="post">
+                        <div style="margin-bottom: 18px;">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Họ và tên</label>
+                            <input asp-for="FullName" class="form-control" placeholder="Nhập họ và tên" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div style="margin-bottom: 18px;">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Số điện thoại</label>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="Nhập số điện thoại" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <div style="margin-bottom: 18px;">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Địa chỉ nhận hàng</label>
+                            <input asp-for="ShippingAddress" class="form-control" placeholder="Nhập địa chỉ nhận hàng" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="font-weight: 600; margin-bottom: 8px; display: block;">Ghi chú</label>
+                            <textarea asp-for="Note" class="form-control" placeholder="Nhập ghi chú nếu có" rows="5" style="border-radius: 10px;"></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-default add-to-cart"
+                                style="width: 100%; height: 48px; border-radius: 30px; font-size: 16px; font-weight: 700; background: linear-gradient(90deg, #FE980F, #ff7a00); border: none;">
+                            Đặt hàng ngay
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div style="background: #fff; border-radius: 16px; padding: 25px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                    <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 20px;">
+                        <h2 style="margin: 0; font-size: 28px; font-weight: 700; color: #222;">Đơn hàng của bạn</h2>
+                        <p style="margin-top: 8px; color: #777;">Kiểm tra lại sản phẩm trước khi đặt hàng</p>
+                    </div>
+
+                    @if (cartItems != null && cartItems.Any())
+                    {
+                        foreach (var item in cartItems)
+                        {
+                            <div style="display: flex; gap: 15px; align-items: center; padding: 12px 0; border-bottom: 1px solid #f1f1f1;">
+                                <div style="width: 80px; height: 80px; background: #f8f8f8; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                    <img src="~/images/home/@item.Product?.ImageUrl"
+                                         alt="@item.Product?.Name"
+                                         class="img-responsive"
+                                         style="max-width: 100%; max-height: 100%; object-fit: contain;" />
+                                </div>
+
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0 0 8px 0; font-size: 18px; font-weight: 700; color: #222;">
+                                        @item.Product?.Name
+                                    </h4>
+                                    <p style="margin: 0; color: #666;">Số lượng: @item.Quantity</p>
+                                    <p style="margin: 6px 0 0 0; color: #FE980F; font-weight: 700;">
+                                        @((item.Product != null ? item.Product.Price * item.Quantity : 0).ToString("N0")) đ
+                                    </p>
+                                </div>
+                            </div>
+                        }
+
+                        <div style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, #fff8ef, #fff3e0); border-radius: 14px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-size: 18px; font-weight: 600; color: #444;">Tổng thanh toán</span>
+                                <span style="font-size: 28px; font-weight: 800; color: #FE980F;">@total.ToString("N0") đ</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            Giỏ hàng của bạn đang trống.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

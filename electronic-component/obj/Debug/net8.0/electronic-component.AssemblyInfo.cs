@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("electronic-component")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b0c80d32e71282e7f44e5e3b9cdb6dff84a27ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12e2a339daba5aedf924d6972ebf538431b37dde")]
 [assembly: System.Reflection.AssemblyProductAttribute("electronic-component")]
 [assembly: System.Reflection.AssemblyTitleAttribute("electronic-component")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

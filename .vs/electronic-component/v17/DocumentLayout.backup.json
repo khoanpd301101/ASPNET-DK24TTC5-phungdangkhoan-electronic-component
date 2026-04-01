@@ -3,8 +3,64 @@
   "WorkspaceRootPath": "D:\\FL\\project_DK\\electronic-component\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,12 +75,28 @@
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +107,12 @@
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FL\\project_DK\\electronic-component\\electronic-component\\Migrations\\20260331090324_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:electronic-component\\Migrations\\20260331090324_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FL\\project_DK\\electronic-component\\electronic-component\\Migrations\\20260331090019_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:electronic-component\\Migrations\\20260331090019_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,16 +123,8 @@
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\wishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -83,8 +135,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:electronic-component\\Migrations\\20260313134805_khoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|d:\\fl\\project_dk\\electronic-component\\electronic-component\\migrations\\20260331090324_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43ED2051-84DA-4C57-854E-ACD104FE293B}|electronic-component\\electronic-component.csproj|solutionrelative:electronic-component\\migrations\\20260331090324_addmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,148 +174,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "electronic-component\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "electronic-component\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-31T11:52:13.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Detail.cshtml",
-              "RelativeDocumentMoniker": "electronic-component\\Views\\Product\\Detail.cshtml",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Detail.cshtml",
-              "RelativeToolTip": "electronic-component\\Views\\Product\\Detail.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-31T09:44:05.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "electronic-component\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "electronic-component\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T08:53:27.443Z",
+              "WhenOpened": "2026-04-01T09:02:09.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Wishlist.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Wishlist.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\Wishlist.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Wishlist.cs",
-              "RelativeToolTip": "electronic-component\\Models\\Wishlist.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T08:52:47.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\Cart.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Cart.cs",
-              "RelativeToolTip": "electronic-component\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T08:52:33.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\appsettings.json",
-              "RelativeDocumentMoniker": "electronic-component\\appsettings.json",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\appsettings.json",
-              "RelativeToolTip": "electronic-component\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T13:44:49.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\AppDbContext.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "electronic-component\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:44:31.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\OrderDetail.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "electronic-component\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:44:10.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "electronic-component\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "electronic-component\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-13T14:03:12.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "electronic-component\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\ProductController.cs",
               "RelativeToolTip": "electronic-component\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA8wDYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T09:42:49.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "electronic-component\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "electronic-component\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAH8AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-13T14:01:46.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "electronic-component\\Controllers\\HomeController.cs",
@@ -276,7 +213,328 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\CartController.cs",
+              "RelativeToolTip": "electronic-component\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwKQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:23:34.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Order\\Checkout.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Checkout.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Order\\Checkout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:39:21.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Detail.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Order\\Detail.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Detail.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Order\\Detail.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAcwI8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:42:21.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "electronic-component\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwHEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:38:43.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\Cart.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Cart.cs",
+              "RelativeToolTip": "electronic-component\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:52:33.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwGMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:42:03.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:25:11.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Success.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Order\\Success.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Order\\Success.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Order\\Success.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwEAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:41:38.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\Order.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Order.cs",
+              "RelativeToolTip": "electronic-component\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:43:55.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAcwFkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T14:01:46.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\CheckoutViewModel.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\CheckoutViewModel.cs",
+              "RelativeToolTip": "electronic-component\\Models\\CheckoutViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:38:15.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "electronic-component\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:53:27.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\appsettings.json",
+              "RelativeDocumentMoniker": "electronic-component\\appsettings.json",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\appsettings.json",
+              "RelativeToolTip": "electronic-component\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-13T13:44:49.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Wishlist.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Wishlist.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\Wishlist.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Wishlist.cs",
+              "RelativeToolTip": "electronic-component\\Models\\Wishlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:52:47.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "electronic-component\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T08:57:34.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T14:03:12.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Product\\Detail.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Product\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T09:44:05.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-31T11:52:13.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "electronic-component\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:44:10.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "electronic-component\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:00:26.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:06:12.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "electronic-component\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "electronic-component\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T09:06:28.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\AppDbContext.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "electronic-component\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:44:31.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Models\\Customer.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Customer.cs",
+              "RelativeToolTip": "electronic-component\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:43:33.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Program.cs",
+              "RelativeDocumentMoniker": "electronic-component\\Program.cs",
+              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Program.cs",
+              "RelativeToolTip": "electronic-component\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:46:09.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "20260331090019_addmodel.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Migrations\\20260331090019_addmodel.cs",
               "RelativeDocumentMoniker": "electronic-component\\Migrations\\20260331090019_addmodel.cs",
@@ -284,12 +542,11 @@
               "RelativeToolTip": "electronic-component\\Migrations\\20260331090019_addmodel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T09:00:19.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T09:00:19.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 33,
               "Title": "20260331090324_addmodel.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Migrations\\20260331090324_addmodel.cs",
               "RelativeDocumentMoniker": "electronic-component\\Migrations\\20260331090324_addmodel.cs",
@@ -297,37 +554,11 @@
               "RelativeToolTip": "electronic-component\\Migrations\\20260331090324_addmodel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T09:03:24.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T09:03:24.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\Order.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Order.cs",
-              "RelativeToolTip": "electronic-component\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:43:55.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Program.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Program.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Program.cs",
-              "RelativeToolTip": "electronic-component\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:46:09.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 24,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Category.cs",
               "RelativeDocumentMoniker": "electronic-component\\Models\\Category.cs",
@@ -335,12 +566,11 @@
               "RelativeToolTip": "electronic-component\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:42:22.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:42:22.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "20260313134805_khoan.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Migrations\\20260313134805_khoan.cs",
               "RelativeDocumentMoniker": "electronic-component\\Migrations\\20260313134805_khoan.cs",
@@ -352,20 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "electronic-component\\Models\\Customer.cs",
-              "ToolTip": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Customer.cs",
-              "RelativeToolTip": "electronic-component\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:43:33.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 27,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Models\\Product.cs",
               "RelativeDocumentMoniker": "electronic-component\\Models\\Product.cs",
@@ -373,12 +590,11 @@
               "RelativeToolTip": "electronic-component\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:43:00.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:43:00.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\FL\\project_DK\\electronic-component\\electronic-component\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "electronic-component\\Views\\_ViewStart.cshtml",

@@ -21,6 +21,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="~/images/ico/apple-touch-icon-57-precomposed.png" />
 </head>
+@using electronic_component.Models
+@inject AppDbContext _context
+@{
+        var customerId = Context.Session.GetInt32("CustomerId");
+        var cartCount = 0;
+
+        if (customerId != null)
+        {
+                cartCount = _context.Carts.Count(c => c.CustomerId == customerId.Value);
+        }
+}
 <body>
     <header id="header">
         <div class="header_top">
@@ -64,11 +75,49 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
-                                <li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
-                                <li><a href="#"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                                <li><a href="#"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                                @if (Context.Session.GetInt32("CustomerId") != null)
+                                {
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i> Xin chào, @Context.Session.GetString("CustomerName")
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Order" asp-action="Index">
+                                            <i class="fa fa-list"></i> Đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Logout">
+                                            <i class="fa fa-lock"></i> Đăng xuất
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Cart" asp-action="Index">
+                                            <i class="fa fa-shopping-cart"></i> Giỏ hàng (@cartCount)
+                                        </a>
+                                    </li>
+
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login">
+                                            <i class="fa fa-lock"></i> Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Register">
+                                            <i class="fa fa-user"></i> Đăng ký
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Cart" asp-action="Index">
+                                            <i class="fa fa-shopping-cart"></i> Giỏ hàng (@cartCount)
+                                        </a>
+                                    </li>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -94,7 +143,6 @@
                                 <li>
                                     <a asp-controller="Product" asp-action="Index">Sản phẩm</a>
                                 </li>
-                                <li><a href="#">Danh mục</a></li>
                                 <li><a href="#">Liên hệ</a></li>
                             </ul>
                         </div>

@@ -2,13 +2,9 @@
 
 namespace electronic_component.Models
 {
-    public class Customer
+    public class RegisterViewModel
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "Họ tên không được để trống")]
-        [StringLength(100)]
         public string FullName { get; set; }
 
         [Required(ErrorMessage = "Email không được để trống")]
@@ -16,16 +12,14 @@ namespace electronic_component.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Mật khẩu không được để trống")]
-        [StringLength(100)]
+        [MinLength(6, ErrorMessage = "Mật khẩu phải có ít nhất 6 ký tự")]
         public string Password { get; set; }
 
-        [Phone(ErrorMessage = "Số điện thoại không hợp lệ")]
+        [Required(ErrorMessage = "Vui lòng nhập lại mật khẩu")]
+        [Compare("Password", ErrorMessage = "Mật khẩu nhập lại không khớp")]
+        public string ConfirmPassword { get; set; }
+
         public string? Phone { get; set; }
-
         public string? Address { get; set; }
-
-        public virtual ICollection<Cart>? Carts { get; set; }
-        public virtual ICollection<Wishlist>? Wishlists { get; set; }
-        public virtual ICollection<Order>? Orders { get; set; }
     }
 }

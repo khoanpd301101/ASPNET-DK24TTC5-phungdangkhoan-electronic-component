@@ -65,9 +65,13 @@
                                         <h2>@item.Price.ToString("N0") đ</h2>
                                         <p><strong>Danh mục:</strong> @item.Category?.Name</p>
 
-                                        <a href="#" class="btn btn-default add-to-cart">
-                                            <i class="fa fa-shopping-cart"></i>Thêm giỏ hàng
-                                        </a>
+                                        <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                            <input type="hidden" name="productId" value="@item.Id" />
+                                            <input type="hidden" name="quantity" value="1" />
+                                            <button type="submit" class="btn btn-default add-to-cart">
+                                                <i class="fa fa-shopping-cart"></i>Thêm giỏ hàng
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

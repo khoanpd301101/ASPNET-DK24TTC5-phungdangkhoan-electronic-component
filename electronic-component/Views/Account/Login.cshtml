@@ -1,0 +1,48 @@
+﻿@model electronic_component.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<section style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="login-form">
+                    <h2>Đăng nhập tài khoản</h2>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    <form asp-action="Login" asp-controller="Account" method="post">
+                        <input asp-for="Email" class="form-control" placeholder="Nhập email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <br />
+
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Nhập mật khẩu" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <br />
+
+                        <button type="submit" class="btn btn-default">Đăng nhập</button>
+                    </form>
+
+                    <br />
+                    <p>
+                        Chưa có tài khoản?
+                        <a asp-controller="Account" asp-action="Register">Đăng ký ngay</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
