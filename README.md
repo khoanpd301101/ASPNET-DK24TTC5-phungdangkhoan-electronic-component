@@ -50,7 +50,6 @@ Dự án được xây dựng bằng các công nghệ sau:
 - Tìm kiếm sản phẩm
 - Lọc sản phẩm theo danh mục
 - Thêm sản phẩm vào giỏ hàng
-- Thêm sản phẩm vào danh sách yêu thích
 - Đặt hàng
 
 ### Đối với quản trị
@@ -71,7 +70,6 @@ Hệ thống sử dụng các bảng dữ liệu chính như:
 - **Product**: lưu thông tin sản phẩm
 - **Customer**: lưu thông tin khách hàng
 - **Cart**: lưu giỏ hàng
-- **Wishlist**: lưu danh sách yêu thích
 - **Order**: lưu đơn hàng
 - **OrderDetail**: lưu chi tiết đơn hàng
 
@@ -85,6 +83,5 @@ Một số giao diện chính của website gồm có:
 - Trang danh sách sản phẩm
 - Trang chi tiết sản phẩm
 - Trang giỏ hàng
-- Trang danh sách yêu thích
 - Trang đặt hàng
 - Trang quản lý sản phẩm
