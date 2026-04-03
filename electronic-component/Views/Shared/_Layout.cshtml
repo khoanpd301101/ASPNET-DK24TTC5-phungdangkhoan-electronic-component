@@ -77,12 +77,19 @@
                             <ul class="nav navbar-nav">
                                 @if (Context.Session.GetInt32("CustomerId") != null)
                                 {
-
                                     <li>
-                                        <a href="#">
-                                            <i class="fa fa-user"></i> Xin chào, @Context.Session.GetString("CustomerName")
+                                        <a asp-controller="Profile" asp-action="Index">
+                                            <i class="fa fa-user"> Xin chào, </i> @Context.Session.GetString("CustomerName")
                                         </a>
                                     </li>
+                                    @if (Context.Session.GetString("Role") == "Admin")
+                                    {
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Index">
+                                                <i class="fa fa-cogs"></i> Quản trị
+                                            </a>
+                                        </li>
+                                    }
                                     <li>
                                         <a asp-controller="Order" asp-action="Index">
                                             <i class="fa fa-list"></i> Đơn hàng

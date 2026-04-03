@@ -18,6 +18,12 @@ namespace electronic_component.Controllers
         {
             if (HttpContext.Session.GetInt32("CustomerId") != null)
             {
+                var role = HttpContext.Session.GetString("Role");
+                if (role == "Admin")
+                {
+                    return RedirectToAction("Index", "Admin");
+                }
+
                 return RedirectToAction("Index", "Home");
             }
 
@@ -44,6 +50,12 @@ namespace electronic_component.Controllers
             HttpContext.Session.SetInt32("CustomerId", customer.Id);
             HttpContext.Session.SetString("CustomerName", customer.FullName);
             HttpContext.Session.SetString("CustomerEmail", customer.Email);
+            HttpContext.Session.SetString("Role", customer.Role);
+
+            if (customer.Role == "Admin")
+            {
+                return RedirectToAction("Index", "Admin");
+            }
 
             return RedirectToAction("Index", "Home");
         }
@@ -82,7 +94,8 @@ namespace electronic_component.Controllers
                 Email = model.Email,
                 Password = model.Password,
                 Phone = model.Phone,
-                Address = model.Address
+                Address = model.Address,
+                Role = "User"
             };
 
             _context.Customers.Add(customer);
@@ -91,6 +104,7 @@ namespace electronic_component.Controllers
             HttpContext.Session.SetInt32("CustomerId", customer.Id);
             HttpContext.Session.SetString("CustomerName", customer.FullName);
             HttpContext.Session.SetString("CustomerEmail", customer.Email);
+            HttpContext.Session.SetString("Role", customer.Role);
 
             return RedirectToAction("Index", "Home");
         }

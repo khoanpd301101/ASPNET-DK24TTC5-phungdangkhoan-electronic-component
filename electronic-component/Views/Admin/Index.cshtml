@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Quản trị";
+}
+
+<section style="margin-top:30px; margin-bottom:40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="title text-center">Trang quản trị</h2>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div style="background:#fff; padding:30px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                            <h3>Quản lý sản phẩm</h3>
+                            <p>Thêm, sửa, xóa sản phẩm</p>
+                            <a asp-controller="AdminProduct" asp-action="Index" class="btn btn-default add-to-cart">
+                                Vào quản lý
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div style="background:#fff; padding:30px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                            <h3>Quản lý danh mục</h3>
+                            <p>Thêm, sửa, xóa danh mục</p>
+                            <a asp-controller="AdminCategory" asp-action="Index" class="btn btn-default add-to-cart">
+                                Vào quản lý
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div style="background:#fff; padding:30px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                            <h3>Quản lý đơn hàng</h3>
+                            <p>Xem đơn và đổi trạng thái</p>
+                            <a asp-controller="AdminOrder" asp-action="Index" class="btn btn-default add-to-cart">
+                                Vào quản lý
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<electronic_component.Models.Product>
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<section style="margin-top:30px; margin-bottom:40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="title text-center">Quản lý sản phẩm</h2>
+
+                <div style="margin-bottom:20px;">
+                    <a asp-controller="AdminProduct" asp-action="Create" class="btn btn-success">
+                        Thêm sản phẩm
+                    </a>
+                </div>
+
+                <div class="table-responsive" style="background:#fff; padding:20px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.08);">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Danh mục</th>
+                                <th>Giá</th>
+                                <th>Tồn kho</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td style="width:100px;">
+                                        <img src="~/images/home/@item.ImageUrl" alt="@item.Name"
+                                             class="img-responsive"
+                                             style="height:70px; width:100%; object-fit:contain;" />
+                                    </td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Category?.Name</td>
+                                    <td>@item.Price.ToString("N0") đ</td>
+                                    <td>@item.StockQuantity</td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Sửa</a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
