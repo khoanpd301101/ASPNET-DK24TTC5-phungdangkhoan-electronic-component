@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>@ViewData["Title"] - E-Shopper</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="~/css/price-range.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="~/images/ico/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="~/images/ico/apple-touch-icon-57-precomposed.png" />
+</head>
+@using electronic_component.Models
+@inject AppDbContext _context
+@{
+        var customerId = Context.Session.GetInt32("CustomerId");
+        var cartCount = 0;
+
+        if (customerId != null)
+        {
+                cartCount = _context.Carts.Count(c => c.CustomerId == customerId.Value);
+        }
+}
+<body>
+    <header id="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i> +84 123 456 789</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> linhkien@shop.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left" style="margin-top: 8px;">
+                            <a asp-controller="Home" asp-action="Index" style="text-decoration: none;">
+                                <h1 style="margin: 0; font-size: 30px; font-weight: 800; color: #222; letter-spacing: 2px;">
+                                    <span style="color: #FE980F;">KHOAN</span> ELECTRONIC
+                                </h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                @if (Context.Session.GetInt32("CustomerId") != null)
+                                {
+                                    <li>
+                                        <a asp-controller="Profile" asp-action="Index">
+                                            <i class="fa fa-user"> Xin chào, </i> @Context.Session.GetString("CustomerName")
+                                        </a>
+                                    </li>
+                                    @if (Context.Session.GetString("Role") == "Admin")
+                                    {
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="Index">
+                                                <i class="fa fa-cogs"></i> Quản trị
+                                            </a>
+                                        </li>
+                                    }
+                                    <li>
+                                        <a asp-controller="Order" asp-action="Index">
+                                            <i class="fa fa-list"></i> Đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Logout">
+                                            <i class="fa fa-lock"></i> Đăng xuất
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Cart" asp-action="Index">
+                                            <i class="fa fa-shopping-cart"></i> Giỏ hàng (@cartCount)
+                                        </a>
+                                    </li>
+
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login">
+                                            <i class="fa fa-lock"></i> Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Register">
+                                            <i class="fa fa-user"></i> Đăng ký
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Cart" asp-action="Index">
+                                            <i class="fa fa-shopping-cart"></i> Giỏ hàng (@cartCount)
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a asp-controller="Home" asp-action="Index" class="active">Trang chủ</a></li>
+                                <li>
+                                    <a asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                                </li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="search_box pull-right" style="width:100%; margin-top:5px;">
+                            <form asp-controller="Product" asp-action="Index" method="get" style="width:100%; position:relative;">
+                                <input type="text"
+                                       name="keyword"
+                                       placeholder="Tìm kiếm sản phẩm"
+                                       value="@ViewBag.Keyword"
+                                       style="width:100%; height:42px; padding:0 18px; border:1px solid #ccc; border-radius:25px; background:#fff;" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="companyinfo">
+                            <h2 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;">
+                                <span style="color: #FE980F;">KHOAN</span>
+                                <span style="color: #333;">ELECTRONIC</span>
+                            </h2>
+                            <p>Website bán linh kiện điện tử ASP.NET MVC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Dịch vụ</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Hỗ trợ online</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#">Trạng thái đơn</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Sản phẩm</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Arduino</a></li>
+                                <li><a href="#">Cảm biến</a></li>
+                                <li><a href="#">Module</a></li>
+                                <li><a href="#">Nguồn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Chính sách</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Điều khoản</a></li>
+                                <li><a href="#">Bảo mật</a></li>
+                                <li><a href="#">Đổi trả</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Giới thiệu</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Thông tin shop</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Bản quyền</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <div class="single-widget">
+                            <h2>Nhận tin mới</h2>
+                            <form action="#" class="searchform">
+                                <input type="text" placeholder="Nhập email" />
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fa fa-arrow-circle-o-right"></i>
+                                </button>
+                                <p>Nhận thông báo sản phẩm và ưu đãi mới nhất</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="pull-left">Copyright © 2025 E-Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.scrollUp.min.js"></script>
+    <script src="~/js/price-range.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/main.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

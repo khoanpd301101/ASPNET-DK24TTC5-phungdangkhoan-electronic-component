@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Quản trị</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body style="background: #f5f6fa;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-sm-2" style="background:#1f2937; min-height:100vh; padding:0;">
+                <div style="padding:25px 20px; color:#fff; font-size:24px; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.1);">
+                    ADMIN PANEL
+                </div>
+
+                <ul class="nav" style="margin-top:20px;">
+                    <li>
+                        <a asp-controller="Admin" asp-action="Index" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-dashboard"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="AdminProduct" asp-action="Index" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-folder"></i> Quản lý sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="AdminCategory" asp-action="Index" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-bars"></i> Quản lý danh mục
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="AdminOrder" asp-action="Index" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-shopping-cart"></i> Quản lý đơn hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-desktop"></i> Về website
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Account" asp-action="Logout" style="color:#fff; padding:15px 20px; display:block;">
+                            <i class="fa fa-power-off"></i> Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-sm-10" style="padding:0;">
+                <div style="background:#fff; padding:20px 30px; border-bottom:1px solid #eee;">
+                    <h3 style="margin:0; font-weight:700;">@ViewData["Title"]</h3>
+                </div>
+
+                <div style="padding:30px;">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

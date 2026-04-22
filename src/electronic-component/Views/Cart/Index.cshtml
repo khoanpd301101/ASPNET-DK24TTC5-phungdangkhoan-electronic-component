@@ -1,0 +1,160 @@
+﻿@model IEnumerable<electronic_component.Models.Cart>
+
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    var total = Model.Sum(x => x.Product != null ? x.Product.Price * x.Quantity : 0);
+}
+
+<section style="margin-top: 30px; margin-bottom: 50px; background: #f8f9fb; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 padding-right">
+                <div style="margin-bottom: 25px;">
+                    <h2 class="title text-center" style="margin-bottom: 10px;">Giỏ hàng của bạn</h2>
+                    <p class="text-center" style="color: #777; font-size: 16px;">
+                        Kiểm tra sản phẩm, cập nhật số lượng và tiến hành thanh toán
+                    </p>
+                </div>
+
+                @if (Model.Any())
+                {
+                    <div style="background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); margin-bottom: 25px;">
+                        <div class="table-responsive">
+                            <table class="table" style="margin-bottom: 0;">
+                                <thead>
+                                    <tr style="background: #f8f9fb;">
+                                        <th style="padding: 15px;">Hình ảnh</th>
+                                        <th style="padding: 15px;">Tên sản phẩm</th>
+                                        <th style="padding: 15px;">Giá</th>
+                                        <th style="padding: 15px;">Số lượng</th>
+                                        <th style="padding: 15px;">Thành tiền</th>
+                                        <th style="padding: 15px; text-align: center;">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr style="border-bottom: 1px solid #f1f1f1;">
+                                            <td style="width: 120px; padding: 15px; vertical-align: middle;">
+                                                <div style="width: 90px; height: 90px; background: #f8f8f8; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                                    <img src="~/images/home/@item.Product?.ImageUrl"
+                                                         alt="@item.Product?.Name"
+                                                         class="img-responsive"
+                                                         style="max-width: 100%; max-height: 100%; object-fit: contain;" />
+                                                </div>
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle;">
+                                                <h4 style="margin: 0; font-size: 18px; font-weight: 700; color: #222;">
+                                                    @item.Product?.Name
+                                                </h4>
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; color: #555; font-weight: 700;">
+                                                @(item.Product?.Price.ToString("N0")) đ
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; width: 180px;">
+                                                <div style="display: flex; align-items: center; gap: 10px;">
+                                                    <a asp-controller="Cart"
+                                                       asp-action="Decrease"
+                                                       asp-route-id="@item.CartId"
+                                                       class="btn btn-default"
+                                                       style="width: 36px; height: 36px; border-radius: 50%; padding: 0; line-height: 36px; text-align: center;">
+                                                        -
+                                                    </a>
+
+                                                    <span style="min-width: 30px; text-align: center; font-weight: 700; font-size: 16px;">
+                                                        @item.Quantity
+                                                    </span>
+
+                                                    <a asp-controller="Cart"
+                                                       asp-action="Increase"
+                                                       asp-route-id="@item.CartId"
+                                                       class="btn btn-default"
+                                                       style="width: 36px; height: 36px; border-radius: 50%; padding: 0; line-height: 36px; text-align: center;">
+                                                        +
+                                                    </a>
+                                                </div>
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; color: #FE980F; font-weight: 800; font-size: 18px;">
+                                                @((item.Product != null ? item.Product.Price * item.Quantity : 0).ToString("N0")) đ
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; text-align: center;">
+                                                <a asp-controller="Cart"
+                                                   asp-action="Remove"
+                                                   asp-route-id="@item.CartId"
+                                                   class="btn btn-danger"
+                                                   style="border-radius: 22px; padding: 8px 16px;">
+                                                    Xóa
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div style="background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                                <h3 style="margin-top: 0; font-size: 24px; font-weight: 700; color: #222;">
+                                    Gợi ý
+                                </h3>
+                                <p style="margin-bottom: 0; color: #777; font-size: 15px;">
+                                    Kiểm tra lại số lượng sản phẩm trước khi thanh toán để đảm bảo đúng nhu cầu của bạn.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div style="background: linear-gradient(135deg, #fff8ef, #fff1dc); padding: 28px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                                <h3 style="margin-top: 0; font-size: 24px; font-weight: 700; color: #222;">
+                                    Tổng thanh toán
+                                </h3>
+
+                                <h2 style="color: #FE980F; font-weight: 800; margin-top: 20px; font-size: 36px;">
+                                    @total.ToString("N0") đ
+                                </h2>
+
+                                <p style="color: #666; margin-top: 10px;">
+                                    Số dòng sản phẩm: @Model.Count()
+                                </p>
+
+                                <a asp-controller="Order"
+                                   asp-action="Checkout"
+                                   class="btn btn-default add-to-cart"
+                                   style="margin-top: 20px; width: 100%; height: 46px; border-radius: 25px; font-size: 16px; font-weight: 700;">
+                                    Tiến hành thanh toán
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div style="background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                        <div style="width: 90px; height: 90px; line-height: 90px; margin: 0 auto 20px auto; border-radius: 50%; background: #fff3e0; color: #FE980F; font-size: 36px;">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+
+                        <h3 style="margin-bottom: 10px; font-weight: 700; color: #222;">
+                            Giỏ hàng của bạn đang trống
+                        </h3>
+
+                        <p style="color: #777; margin-bottom: 25px;">
+                            Hãy thêm một vài sản phẩm linh kiện điện tử để tiếp tục mua sắm.
+                        </p>
+
+                        <a asp-controller="Product" asp-action="Index" class="btn btn-default add-to-cart" style="border-radius: 25px; padding: 10px 22px;">
+                            Xem sản phẩm
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,90 @@
+﻿@model electronic_component.Models.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Thông tin cá nhân";
+}
+
+<section style="margin-top: 30px; margin-bottom: 50px; background: #f8f9fb; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div style="background: #fff; padding: 35px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                    <div class="text-center" style="margin-bottom: 25px;">
+                        <div style="width: 90px; height: 90px; line-height: 90px; margin: 0 auto 15px auto; border-radius: 50%; background: #fff3e0; color: #FE980F; font-size: 36px;">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <h2 class="title text-center" style="margin-bottom: 10px;">Thông tin cá nhân</h2>
+                        <p style="color: #777;">Quản lý thông tin tài khoản của bạn</p>
+                    </div>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success">@ViewBag.Success</div>
+                    }
+
+                    <form asp-controller="Profile" asp-action="Index" method="post">
+                        <div class="form-group">
+                            <label>Họ và tên</label>
+                            <input asp-for="FullName" class="form-control" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input asp-for="Email" class="form-control" readonly style="height: 45px; border-radius: 10px; background: #f9f9f9;" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input asp-for="Phone" class="form-control" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Địa chỉ</label>
+                            <input asp-for="Address" class="form-control" style="height: 45px; border-radius: 10px;" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <hr />
+
+                        <h3 style="margin-bottom: 20px; font-size: 22px; font-weight: 700;">Đổi mật khẩu</h3>
+
+                        <div class="form-group">
+                            <label>Mật khẩu hiện tại</label>
+                            <input asp-for="CurrentPassword" type="password" class="form-control" style="height: 45px; border-radius: 10px;" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mật khẩu mới</label>
+                            <input asp-for="NewPassword" type="password" class="form-control" style="height: 45px; border-radius: 10px;" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nhập lại mật khẩu mới</label>
+                            <input asp-for="ConfirmNewPassword" type="password" class="form-control" style="height: 45px; border-radius: 10px;" />
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-default add-to-cart"
+                                style="margin-top: 20px; width: 100%; height: 48px; border-radius: 25px; font-size: 16px; font-weight: 700;">
+                            Cập nhật thông tin
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

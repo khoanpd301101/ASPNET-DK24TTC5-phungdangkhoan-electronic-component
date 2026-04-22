@@ -1,0 +1,81 @@
+﻿@model electronic_component.Models.Order
+
+@{
+    ViewData["Title"] = "Đặt hàng thành công";
+}
+
+<section style="margin-top: 30px; margin-bottom: 50px; background: #f8f9fb; padding: 40px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div style="background: #fff; padding: 45px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                    <div style="width: 100px; height: 100px; line-height: 100px; margin: 0 auto 25px auto; border-radius: 50%; background: #eafaf1; color: #28a745; font-size: 42px;">
+                        <i class="fa fa-check"></i>
+                    </div>
+
+                    <h2 class="title text-center" style="margin-bottom: 10px;">Đặt hàng thành công</h2>
+
+                    <p style="font-size: 16px; color: #777; margin-bottom: 30px;">
+                        Cảm ơn bạn đã mua sắm tại cửa hàng. Đơn hàng của bạn đã được ghi nhận thành công.
+                    </p>
+
+                    <div style="background: linear-gradient(135deg, #fff8ef, #fff1dc); border-radius: 16px; padding: 25px; margin-bottom: 30px;">
+                        <div class="row text-left">
+                            <div class="col-sm-6" style="margin-bottom: 12px;">
+                                <p style="margin: 0;">
+                                    <strong>Mã đơn hàng:</strong>
+                                    <span style="color: #222;"> #@Model.Id</span>
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6" style="margin-bottom: 12px;">
+                                <p style="margin: 0;">
+                                    <strong>Ngày đặt:</strong>
+                                    <span style="color: #222;"> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</span>
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6" style="margin-bottom: 12px;">
+                                <p style="margin: 0;">
+                                    <strong>Trạng thái:</strong>
+                                    <span style="color: #FE980F; font-weight: 700;">
+                                        @(Model.Status == "Pending" ? "Chờ xử lý" :
+                                                                                Model.Status == "Confirmed" ? "Đã xác nhận" :
+                                                                                Model.Status == "Shipping" ? "Đang giao" :
+                                                                                Model.Status == "Completed" ? "Hoàn thành" :
+                                                                                Model.Status == "Cancelled" ? "Đã hủy" : Model.Status)
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6" style="margin-bottom: 12px;">
+                                <p style="margin: 0;">
+                                    <strong>Tổng tiền:</strong>
+                                    <span style="color: #FE980F; font-weight: 800; font-size: 20px;">
+                                        @Model.TotalAmount.ToString("N0") đ
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a asp-controller="Order"
+                           asp-action="Index"
+                           class="btn btn-default"
+                           style="border-radius: 25px; padding: 10px 22px; margin-right: 10px;">
+                            <i class="fa fa-list"></i> Xem đơn hàng
+                        </a>
+
+                        <a asp-controller="Home"
+                           asp-action="Index"
+                           class="btn btn-default"
+                           style="border-radius: 25px; padding: 10px 22px;">
+                            <i class="fa fa-home"></i> Về trang chủ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

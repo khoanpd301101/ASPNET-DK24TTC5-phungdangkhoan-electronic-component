@@ -1,0 +1,156 @@
+﻿@model electronic_component.Models.Product
+@using electronic_component.Models
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    var relatedProducts = ViewBag.RelatedProducts as List<Product>;
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="product-details">
+                    <div class="col-sm-5">
+                        <div class="view-product">
+                            <img src="~/images/home/@Model.ImageUrl" alt="@Model.Name" class="img-responsive" />
+                            <h3>ZOOM</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="product-information">
+                            <img src="~/images/product-details/new.jpg" class="newarrival" alt="" />
+
+                            <h2>@Model.Name</h2>
+                            <p>Mã sản phẩm: SP@(Model.Id.ToString("000"))</p>
+                            <img src="~/images/product-details/rating.png" alt="" />
+
+                            <h3>@Model.Price.ToString("N0") đ</h3>
+
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                <input type="hidden" name="productId" value="@Model.Id" />
+
+                                <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                    <input type="hidden" name="productId" value="@Model.Id" />
+                                    <label>Số lượng:</label>
+                                    <input type="number" name="quantity" value="1" min="1" />
+                                    <button type="submit" class="btn btn-fefault cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </form>
+                            </form>
+
+                            <p>
+                                <b>Tình trạng:</b>
+                                @(Model.StockQuantity > 0 ? "Còn hàng" : "Hết hàng")
+                            </p>
+                            <p><b>Danh mục:</b> @Model.Category?.Name</p>
+                            <p><b>Số lượng kho:</b> @Model.StockQuantity</p>
+                            <p><b>Mô tả:</b> @Model.Description</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-tab shop-details-tab">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#details" data-toggle="tab">Chi tiết</a></li>
+                            <li><a href="#companyprofile" data-toggle="tab">Thông tin thêm</a></li>
+                            <li><a href="#tag" data-toggle="tab">Danh mục</a></li>
+                            <li><a href="#reviews" data-toggle="tab">Đánh giá</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="details">
+                            <div class="col-sm-12">
+                                <p><b>Tên sản phẩm:</b> @Model.Name</p>
+                                <p><b>Giá:</b> @Model.Price.ToString("N0") đ</p>
+                                <p><b>Danh mục:</b> @Model.Category?.Name</p>
+                                <p><b>Số lượng còn:</b> @Model.StockQuantity</p>
+                                <p><b>Mô tả:</b> @Model.Description</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="companyprofile">
+                            <div class="col-sm-12">
+                                <p>Sản phẩm linh kiện điện tử chất lượng, phù hợp học tập, nghiên cứu và làm đồ án.</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tag">
+                            <div class="col-sm-12">
+                                <p>@Model.Category?.Name</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="reviews">
+                            <div class="col-sm-12">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user"></i>Người dùng</a></li>
+                                    <li><a href="#"><i class="fa fa-clock-o"></i>@DateTime.Now.ToString("hh:mm tt")</a></li>
+                                    <li><a href="#"><i class="fa fa-calendar-o"></i>@DateTime.Now.ToString("dd MMM yyyy")</a></li>
+                                </ul>
+
+                                <p>Sản phẩm hiển thị đẹp, phù hợp cho website bán linh kiện điện tử.</p>
+                                <p><b>Viết đánh giá</b></p>
+
+                                <form action="#">
+                                    <span>
+                                        <input type="text" placeholder="Tên của bạn" />
+                                        <input type="email" placeholder="Email" />
+                                    </span>
+                                    <textarea></textarea>
+                                    <b>Đánh giá: </b>
+                                    <img src="~/images/product-details/rating.png" alt="" />
+                                    <button type="button" class="btn btn-default pull-right">
+                                        Gửi
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommended_items">
+                    <h2 class="title text-center">Sản phẩm liên quan</h2>
+
+                    <div class="row">
+                        @if (relatedProducts != null && relatedProducts.Any())
+                        {
+                            @foreach (var item in relatedProducts)
+                            {
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">
+                                                    <img src="~/images/home/@item.ImageUrl" alt="@item.Name" class="img-responsive" style="height:200px; width:100%; object-fit:contain;" />
+                                                </a>
+                                                <h2>@item.Price.ToString("N0") đ</h2>
+                                                <p>@item.Name</p>
+                                                <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id"
+                                                   class="btn btn-default add-to-cart">
+                                                    <i class="fa fa-eye"></i>Xem chi tiết
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="col-sm-12">
+                                <p>Chưa có sản phẩm liên quan.</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

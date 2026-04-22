@@ -1,0 +1,84 @@
+﻿@model IEnumerable<electronic_component.Models.Product>
+@using electronic_component.Models
+
+@{
+    ViewData["Title"] = "Trang chủ";
+    var categories = ViewBag.Categories as List<Category>;
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+                    <h2>Danh mục</h2>
+                    <div class="panel-group category-products">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a asp-controller="Product" asp-action="Index">
+                                        Tất cả sản phẩm
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        @if (categories != null)
+                        {
+                            foreach (var category in categories)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a asp-controller="Product"
+                                               asp-action="Index"
+                                               asp-route-categoryId="@category.Id">
+                                                @category.Name
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="features_items">
+                    <h2 class="title text-center">Sản phẩm linh kiện điện tử</h2>
+
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">
+                                            <img src="~/images/home/@item.ImageUrl"
+                                                 alt="@item.Name"
+                                                 class="img-responsive"
+                                                 style="height:200px; width:100%; object-fit:contain;" />
+                                        </a>
+
+                                        <h3>@item.Name</h3>
+                                        <h2>@item.Price.ToString("N0") đ</h2>
+                                        <p><strong>Danh mục:</strong> @item.Category?.Name</p>
+
+                                        <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                            <input type="hidden" name="productId" value="@item.Id" />
+                                            <input type="hidden" name="quantity" value="1" />
+                                            <button type="submit" class="btn btn-default add-to-cart">
+                                                <i class="fa fa-shopping-cart"></i>Thêm giỏ hàng
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

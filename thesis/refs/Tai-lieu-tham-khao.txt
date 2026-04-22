@@ -1,0 +1,8 @@
+TÀI LIỆU THAM KHẢO
+[1] Microsoft, “What is ASP.NET Core?,” .NET. [Online]. Available: https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core. [Accessed 16 04 2026]. 
+[2] Microsoft, “ASP.NET Core, an open-source web development framework,” .NET. [Online]. Available: https://dotnet.microsoft.com/en-us/apps/aspnet. [Accessed 16 04 2026]. 
+[3] Microsoft, “Entity Framework documentation hub,” Microsoft Learn. [Online]. Available: https://learn.microsoft.com/en-us/ef/. [Accessed 16 04 2026]. 
+[4] Microsoft, “Getting Started - EF Core,” Microsoft Learn, Aug. 24, 2023. [Online]. Available: https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app. [Accessed 16 04 2026]. 
+[5] Microsoft, “Microsoft SQL documentation - SQL Server,” Microsoft Learn. [Online]. Available: https://learn.microsoft.com/en-us/sql/?view=sql-server-ver17. [Accessed 16 04 2026]. 
+[6] Microsoft, “Transact-SQL Reference (Database Engine) - SQL Server,” Microsoft Learn, Jan. 26, 2026. [Online]. Available: https://learn.microsoft.com/vi-vn/sql/t-sql/language-reference?view=sql-server-ver16. [Accessed 16 04 2026]. 
+[7] Bootstrap Team, “Bootstrap · The most popular HTML, CSS, and JS library,” Bootstrap Documentation. [Online]. Available: https://getbootstrap.com/. [Accessed 16 04 2026]. 

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<electronic_component.Models.Order>
+
+@{
+    ViewData["Title"] = "Đơn hàng của tôi";
+}
+
+<section style="margin-top: 30px; margin-bottom: 50px; background: #f8f9fb; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 padding-right">
+                <div style="margin-bottom: 25px;">
+                    <h2 class="title text-center" style="margin-bottom: 10px;">Đơn hàng của tôi</h2>
+                    <p class="text-center" style="color: #777; font-size: 16px;">
+                        Theo dõi trạng thái và xem lại các đơn hàng bạn đã đặt
+                    </p>
+                </div>
+
+                @if (Model.Any())
+                {
+                    <div style="background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
+                        <div class="table-responsive">
+                            <table class="table" style="margin-bottom: 0;">
+                                <thead>
+                                    <tr style="background: #f8f9fb;">
+                                        <th style="padding: 15px;">Mã đơn</th>
+                                        <th style="padding: 15px;">Ngày đặt</th>
+                                        <th style="padding: 15px;">Tổng tiền</th>
+                                        <th style="padding: 15px;">Trạng thái</th>
+                                        <th style="padding: 15px; text-align: center;">Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        var statusText =
+                                        item.Status == "Pending" ? "Chờ xử lý" :
+                                        item.Status == "Confirmed" ? "Đã xác nhận" :
+                                        item.Status == "Shipping" ? "Đang giao" :
+                                        item.Status == "Completed" ? "Hoàn thành" :
+                                        item.Status == "Cancelled" ? "Đã hủy" : item.Status;
+
+                                        <tr style="border-bottom: 1px solid #f1f1f1;">
+                                            <td style="padding: 15px; vertical-align: middle; font-weight: 700; color: #222;">
+                                                #@item.Id
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; color: #666;">
+                                                @item.OrderDate.ToString("dd/MM/yyyy HH:mm")
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; color: #FE980F; font-weight: 800; font-size: 18px;">
+                                                @item.TotalAmount.ToString("N0") đ
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle;">
+                                                <span style="display: inline-block; padding: 8px 14px; border-radius: 20px; background: #fff3e0; color: #FE980F; font-weight: 700; font-size: 13px;">
+                                                    @statusText
+                                                </span>
+                                            </td>
+
+                                            <td style="padding: 15px; vertical-align: middle; text-align: center;">
+                                                <a asp-controller="Order"
+                                                   asp-action="Detail"
+                                                   asp-route-id="@item.Id"
+                                                   class="btn btn-default add-to-cart"
+                                                   style="border-radius: 25px; padding: 8px 18px;">
+                                                    Xem chi tiết
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div style="background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);" class="text-center">
+                        <div style="width: 90px; height: 90px; line-height: 90px; margin: 0 auto 20px auto; border-radius: 50%; background: #fff3e0; color: #FE980F; font-size: 36px;">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+
+                        <h3 style="margin-bottom: 10px; font-weight: 700; color: #222;">
+                            Bạn chưa có đơn hàng nào
+                        </h3>
+
+                        <p style="color: #777; margin-bottom: 25px;">
+                            Hãy khám phá các sản phẩm linh kiện điện tử và đặt đơn hàng đầu tiên của bạn.
+                        </p>
+
+                        <a asp-controller="Product" asp-action="Index" class="btn btn-default add-to-cart" style="border-radius: 25px; padding: 10px 22px;">
+                            Mua sắm ngay
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+﻿@model electronic_component.Models.Category
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Thêm danh mục";
+}
+
+<div class="row">
+    <div class="col-sm-8">
+        <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+
+            <form asp-action="Create" method="post">
+                <div class="form-group">
+                    <label>Tên danh mục</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Mô tả</label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">Lưu</button>
+                <a asp-action="Index" class="btn btn-default">Quay lại</a>
+            </form>
+        </div>
+    </div>
+</div>

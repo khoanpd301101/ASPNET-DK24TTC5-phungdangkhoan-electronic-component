@@ -1,0 +1,76 @@
+﻿@model IEnumerable<electronic_component.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    var keyword = ViewBag.Keyword as string;
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 padding-right">
+                <div class="features_items">
+                    @if (!string.IsNullOrEmpty(keyword))
+                    {
+                        <h2 class="title text-center">Kết quả tìm kiếm: @keyword</h2>
+                    }
+                    else
+                    {
+                        <h2 class="title text-center">Danh sách sản phẩm</h2>
+                    }
+
+                    @if (Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-sm-4">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">
+                                                <img src="~/images/home/@item.ImageUrl"
+                                                     alt="@item.Name"
+                                                     class="img-responsive"
+                                                     style="height:220px; width:100%; object-fit:contain;" />
+                                            </a>
+
+                                            <h3>
+                                                <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">
+                                                    @item.Name
+                                                </a>
+                                            </h3>
+
+                                            <h2>@item.Price.ToString("N0") đ</h2>
+                                            <p><strong>Danh mục:</strong> @item.Category?.Name</p>
+
+                                            <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                                                <input type="hidden" name="productId" value="@item.Id" />
+                                                <input type="hidden" name="quantity" value="1" />
+                                                <button type="submit" class="btn btn-default add-to-cart">
+                                                    <i class="fa fa-shopping-cart"></i>Thêm giỏ hàng
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="col-sm-12">
+                            @if (!string.IsNullOrEmpty(keyword))
+                            {
+                                <p>Không tìm thấy sản phẩm nào với từ khóa: <strong>@keyword</strong></p>
+                            }
+                            else
+                            {
+                                <p>Hiện chưa có sản phẩm nào.</p>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
